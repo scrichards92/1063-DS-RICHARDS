@@ -38,11 +38,11 @@ struct rgb {
 */
 
 void grayScale(rgb** image, int width, int height) {
-	// your code
 	for (int i = 0; i < height; i++)
 	{
-		for (int j = 0; j <width ; j++)
+		for (int j = 0; j <width ; j++) 
 		{
+			//formula to gray scale an image
 			int gray = (image[i][j].r + image[i][j].g + image[i][j].b) / 3;
 			image[i][j].r = gray;
 			image[i][j].g = gray;
@@ -51,8 +51,20 @@ void grayScale(rgb** image, int width, int height) {
 	}
 }
 
+/**
+* @FunctionName: flipVert
+* @Description: 
+*     Loops through a 2D array and copies each row from top to bottom or bottom to top, swapping row[i] with row[height-1 -i],
+	to create a vertical flip.
+* @Params:
+*    rgb** image - 2D array holding rgb values
+*    int width - width of image
+*    int height - height of image
+* @Returns:
+*    void
+*/
+
 void flipVert(rgb** image, int width, int height) {
-	// your code
 	for (int i = 0; i < height/2; i++)
 	{
 		int k = height - i - 1;
@@ -65,8 +77,21 @@ void flipVert(rgb** image, int width, int height) {
 	}
 }
 
+
+/**
+* @FunctionName: flipHorz
+* @Description: 
+*     Loops through a 2D array and copies each column from left to right or right to left, swapping column[i] with column[width-1 -i],
+	to create a horizontal flip.
+* @Params:
+*    rgb** image - 2D array holding rgb values
+*    int width - width of image
+*    int height - height of image
+* @Returns:
+*    void
+*/
+
 void flipHorz(rgb** image, int width, int height) {
-	// your code
 	for (int i = 0; i < height; i++)
 	{
 		for (int j = 0; j < width/2; j++)
