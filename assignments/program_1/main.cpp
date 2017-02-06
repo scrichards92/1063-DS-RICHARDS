@@ -83,8 +83,8 @@ void flipHorz(rgb** image, int width, int height) {
 int main() {
 	ifstream ifile;          //Input / output files
 	ofstream ofile;
-	ifile.open("Text.txt");
-	ofile.open("bot2.txt");
+	ifile.open("Nemo.txt");
+	ofile.open("NemoO.txt");
 
 	int width;               //width of image
 	int height;              //height of image
