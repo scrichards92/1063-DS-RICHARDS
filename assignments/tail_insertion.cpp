@@ -1,3 +1,15 @@
+/**
+* @ProgramName: FrontSert and EndSert Methods
+* @Author: Sierra Richards 
+* @Description: 
+*     This program uses the FrontSert and EndSert methods which use a head pointer and a tail pointer, respectively, 
+	to insert a node in a list.
+* @Course: 1063 Data Structures
+* @Semester: Spring 2017
+* @Date: 10 02 2017
+*/
+
+
 #include <iostream>
 
 struct Node {
@@ -33,7 +45,15 @@ public:
 		Head = Temp;
 	}
 
-
+/**
+* @FunctionName: EndSert
+* @Description: 
+*     Uses the tail pointer to insert a node at the tail end of the list.
+* @Params:
+*    int x - data in the list
+* @Returns:
+*    void
+*/
 	void EndSert(int x)
 	{
 		Node *Temp = new Node;
