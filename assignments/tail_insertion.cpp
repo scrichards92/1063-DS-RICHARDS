@@ -1,6 +1,3 @@
-/// 
-cpp
-
 /**
 * @ProgramName: FrontSert and EndSert Methods
 * @Author: Sierra Richards 
@@ -105,4 +102,3 @@ int main() {
 	return 0;
 }
 
-///
