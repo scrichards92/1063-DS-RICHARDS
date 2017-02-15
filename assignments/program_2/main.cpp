@@ -1,3 +1,13 @@
+/**
+* @ProgramName: Program-2
+* @Author: Sierra Richards
+* @Description: 
+*     This program reads in images stored as rgb values in a space delimited file format.
+* @Course: 1063 Data Structures
+* @Semester: Spring 2017
+* @Date: 15 02 2017
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
